@@ -39,3 +39,16 @@ Refer to [`datasets_azure_ml`](./datasets_azure_ml/) for the notebooks and furth
 To train a model on either an azure-ml compute or compute cluster, one needs to define what ml libraries will be used. For reproducibility of runs, one needs to also specify the versions of these libraries. Azure-ml has `Environment` abstraction.
 
 Refer to [`environments_azure_ml`](./environments_azure_ml/) for the notebooks and further lecture notes.
+
+## Creating training pipeline components
+
+The next important abstraction is the one in which we start creating model training components.
+
+Refer to [`components_azure_ml`](./components_azure_ml/) for the notebooks and further lecture notes.
+
+## Creating training pipeline
+
+Once we know how to create components, lets look at how we can create a pipeline using the components.
+
+Refer to [`pipelines_azure_ml`](./pipelines_azure_ml/) for the notebooks and further lecture notes.
+

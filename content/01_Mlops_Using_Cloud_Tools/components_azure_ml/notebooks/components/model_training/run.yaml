@@ -1,0 +1,24 @@
+name: model_training_mobile_pricing
+display_name: Training classifier on mobile pricing data
+#version: 1 # Not specifying a version will automatically update the version
+type: command
+inputs:
+  train: 
+    type: uri_folder
+  test:
+    type: uri_folder
+  model_name:
+    type: string
+outputs:
+  model:
+    type: uri_folder
+code: .
+environment:
+  # for this step, we'll use an AzureML curate environment
+  azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu:1
+command: >-
+  python run.py 
+  --train ${{inputs.train}} 
+  --test ${{inputs.test}} 
+  --model_name ${{inputs.model_name}} 
+  --model ${{outputs.model}}

@@ -52,3 +52,12 @@ Once we know how to create components, lets look at how we can create a pipeline
 
 Refer to [`pipelines_azure_ml`](./pipelines_azure_ml/) for the notebooks and further lecture notes.
 
+## Deployment in azure ml
+
+Once the model has been trained, we will need to deploy the model. Azure ml provides following options for model deployment:
+
+1. Online deployments: This creates an api service to consume the model created.
+
+2. Batch deployments: This creates a service that can do bulk predictions.
+
+Refer to [`deployment_azure_ml`](./deployment_azure_ml/) for the notebooks and further lecture notes.

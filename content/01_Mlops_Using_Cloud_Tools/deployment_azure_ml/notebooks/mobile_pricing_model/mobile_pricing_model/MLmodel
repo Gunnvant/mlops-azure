@@ -1,0 +1,13 @@
+artifact_path: mobile_pricing_model
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.8.5
+  sklearn:
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.0.1
+run_id: 78cb94e5-27fb-4ee1-a13b-a3c72f6b5c79
+utc_time_created: '2024-02-28 07:45:40.862345'
